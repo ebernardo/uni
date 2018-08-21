@@ -1,0 +1,108 @@
+        .post-thumbnail {
+            max-height: 600px;
+            background-size: cover;
+            background: no-repeat center center fixed;
+            overflow: hidden;
+            min-height: 500px;
+            position: relative;
+            top: -120px;
+            z-index: -1;
+        }
+        
+        .post-thumbnail picture {
+            width: 100%;
+            background: no-repeat center center fixed;
+            background-size: cover
+        }
+        
+        .post-thumbnail picture:before {
+            position: absolute;
+            z-index: 1;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .6;
+            background: #000
+        }
+        
+        .post-thumbnail img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+        }
+        
+        .post-container header {
+            margin-top: -400px !important;
+            padding-bottom: 50px;
+        }
+        
+        .post-title {
+            top: 0;
+        }
+        
+        .post-content {
+            margin: 0 auto;
+            padding: 50px 20px;
+            width: 90%;
+            font-size: 1.4rem;
+            line-height: 1.62;
+            color: #555;
+        }
+        
+        .post-content h2 {
+            font-weight: 900;
+            color: inherit;
+            font-size: 2rem;
+        }
+        
+        .post-content h3 {
+            font-weight: 400;
+            color: inherit;
+            font-size: 1.8rem;
+        }
+        
+        .post-content p {
+            padding: 0;
+            border: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+        
+        .post-content p a {
+            text-decoration: none;
+        }
+        
+        .post-content p a:hover {
+            background-color: #007bff3b;
+            transition-property: background-color;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out;
+        }
+        
+        .post-content img {
+            max-width: 100%;
+            height: auto !important;
+            margin: 0px;
+        }
+        
+        @media (max-width:767.98px) {
+            .post-thumbnail {
+                top: -80px;
+            }
+            .post-thumbnail img {
+                height: 500px;
+                width: auto;
+                position: absolute;
+                left: -50%;
+                margin-top: 75px;
+            }
+            .post-content {
+                width: 100%;
+            }
+        }
